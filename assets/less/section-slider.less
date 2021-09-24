@@ -1,0 +1,137 @@
+.section-slider{
+    .container{
+        .slider-wrap{
+            padding-top: 60px;
+            .slider-title{
+                font-size: 30px;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+            .slider{
+                display: flex;
+                border: 1px solid grey;
+                .prev-next{
+                    width: 5%;
+                    position: relative;
+                    img{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    & img:nth-child(2){
+                        display: none;
+                    }
+                }
+                .box-slider{
+                    display: flex;
+                    border: 1px solid grey;
+                    width: 90%;
+                    margin: auto;
+                    border-top: none;
+                    border-bottom: none;
+                    .slick-prev, .slick-next{
+                        display: none!important;
+                    }
+                    
+                    .slider-chapitre:nth-child(4), .slider-chapitre:nth-child(8), .slider-chapitre:nth-child(12){
+                        border-right: none;
+                    }
+                    .slider-chapitre{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        border-right: 1px solid grey;
+                        padding: 70px 0px;
+                        .chapitre-count{
+                            font-size: 18px;
+                            font-weight: bold;
+                            position: relative;
+                            margin-bottom: 20px;
+                            &::after{
+                                content: "";
+                                width: 50%;
+                                height: 2px;
+                                position: absolute;
+                                left: 50px;
+                                bottom: -1px;
+                                transform: translateX(-50%);
+                                background-color: black;
+                            }
+                        }
+                        .chapitre-title{
+                            text-align: center;
+                            font-size: 34px;
+                            font-family: 'Times New Roman', Times, serif;
+                            font-weight: lighter;
+                            padding-bottom: 30px;
+                            flex: 1;
+                        }
+                        .chapitre-time{
+                            margin-top: auto;
+                            strong{
+                                position: relative;
+                                &::after{
+                                    content: "";
+                                    width: 100%;
+                                    height: 1px;
+                                    background-color: black;
+                                    position: absolute;
+                                    left: 0px;
+                                    bottom: 1px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .section-slider{
+        padding: 0px 40px;
+        .container{
+            padding: 0px;
+            .slider-wrap{
+                .slider-title{
+                    font-size: 50px;
+                    max-width: 380px;
+                    margin: auto;
+                }
+                .box-slider{
+                    
+                    .prev-next{
+                        width: 13%;
+                        
+                    }
+                    .prev img:nth-child(2), .next img:nth-child(2) {
+                        display: block;
+                    }
+                    .prev img:nth-child(1), .next img:nth-child(1) {
+                        display: none;
+                    }
+                    .slider-chapitre:nth-child(3), .slider-chapitre:nth-child(4), .slider-chapitre:nth-child(5) {
+                        display: none;
+                    }
+                    .slider-chapitre{
+                        width: 74%;
+                        .chapitre-count{
+                            font-size: 30px;
+                            &::after{
+                                display: none;
+                            }
+                        }
+                        .chapitre-title{
+                            font-size: 80px;
+                        }
+                        .chapitre-time{
+                            font-size: 24px;
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+}

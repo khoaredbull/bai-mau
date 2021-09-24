@@ -1,0 +1,221 @@
+.section-indice{
+    .container{
+        .indice-wrap{
+            display: flex;
+            padding: 50px 0px;
+            .indice-left{
+                width: 71.09%;
+                text-align: center;               
+                .indice-box-wrap{
+                    display: flex;
+                    flex-wrap: wrap;
+                    border: 1px solid grey;
+                    .indice-box:nth-child(2){
+                        border-left: 1px solid grey;
+                        border-bottom: 1px solid grey;
+                        .indice-img{
+                            background-image: url(../image/Calque-64.jpg);
+                        }
+                    } 
+                    .indice-box:nth-child(3){
+                        border-top: 1px solid grey;
+                        border-right: 1px solid grey;
+                        .indice-img{
+                            background-image: url(../image/Calque-65.jpg);
+                        }
+                    } 
+                    .indice-box{
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        padding-bottom: 10px;
+                        min-height: 222px;
+                        &.indice-box:nth-child(4) .indice-img{
+                            background-image: url(../image/Calque-66.jpg);
+                        }
+                        .indice-img{
+                            width: 100%;
+                            padding-top: 26.37%;
+                            background-image: url(../image/Calque-63.jpg);
+                            background-size: cover;
+                            object-fit: cover;
+                            position: relative;
+                            img{
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .indice-count{
+                            color: #6E3B87;
+                            font-weight: 600;
+                        }
+                        .indice-title{
+                            font-weight: 500;
+                            width: 100%;
+                            max-width: 274px;
+                            flex: 1;
+                            margin: auto;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                            display: -webkit-box;
+                        }
+                    }
+                }
+                .plus{
+                    border: 1px solid grey;
+                    border-top: none;
+                    padding: 10px 0px;
+                }
+            }
+            .indice-right{
+                width: 28.91%;
+                text-align: center;
+                padding-left: 20px;
+                .votre-wrap{
+                    min-height: 490px;
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                    background-image: linear-gradient(to top right, #13224C, #99A0B2);
+                    .votre{
+                        width: 100%;
+                        padding-top: 105.13%;
+                        background-image: url(../image/Groupe-111.png);
+                        background-size: cover;
+                        object-fit: cover;
+                        position: relative;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                        }
+                        & img:nth-child(2) {
+                            display: none;
+                        }
+                    }
+                    .indice-title{
+                        display: none;
+                    }
+                    .votre-item{
+                        background-color: white;
+                        margin: 0px 20px;
+                        margin-bottom: 10px;
+                        border-radius: 5px;
+                        .votre-item-text{
+                            font-size: 18px;
+                            font-weight: 700;
+                        }
+                        .votre-item-text:last-child{
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.indice-title{
+    font-size: 26px;
+}
+.indice-text{
+    font-size: 16px;
+    display: block;
+    padding-bottom: 10px;
+}
+@media screen and (max-width: 1023px) {
+    .section-indice{
+        .container{
+            padding: 0px 60px;
+            .indice-wrap{
+                display: block;
+                .indice-left{
+                    width: 100%;
+                    .indice-title{
+                        font-size: 50px;
+                    }
+                    .indice-text{
+                        display: none;
+                    }
+                    .indice-box-wrap{
+                        flex-direction: column;
+                        .indice-box{
+                            width: 100%;
+                            border-bottom: 1px solid grey;
+                            .indice-count{
+                                font-size: 30px;
+                            }
+                            .indice-title{
+                                font-size: 40px;
+                                max-width: 100%;
+                                padding: 0px 40px;
+                            }
+                        }
+                        .indice-box:last-child{
+                            display: none;
+                        }
+                        .indice-box:nth-child(3){
+                            border-top: none;
+                            border-bottom: none;
+                        }
+                        .indice-box:nth-child(2){
+                            border-left: 0px;
+                        }
+                        
+                    }
+                }
+                .indice-right{
+                    width: 100%;
+                    padding: 0px;
+                    margin-top: 80px;
+                    .indice-title{
+                        display: none;
+                    }
+                    .indice-text{
+                        display: none;
+                    }
+                    .votre-wrap{
+                        min-height: 0px;
+                        padding-top: 225px;
+                        position: relative;
+                        background-image: linear-gradient(to top right, #13224C, #13224C);
+                        .votre{
+                            width: 50.66%;
+                            padding-top: 40.66%;
+                            background-image: url(../image/IMG.png);
+                            position: absolute;
+                            top: -50px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            & img:first-child{
+                                display: none;
+                            }
+                            & img:nth-child(2){
+                                display: block;
+                            }
+                        }
+                        .indice-title{
+                            display: block;
+                            font-size: 40px;
+                            color: white;
+                            padding-bottom: 30px;
+                        }
+                        .votre-item{
+                            max-width: 480px;
+                            margin: auto;
+                            margin-bottom: 30px;
+                            .votre-item-text{
+                                font-size: 36px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
