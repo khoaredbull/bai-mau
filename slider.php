@@ -6,8 +6,7 @@
                     </h2>
                     <div class="slider">
                         <div class="prev-next prev">
-                            <img src="./assets/image/Curseur-Gauche.png" alt="">
-                            <img src="./assets/image/Curseur-Droite-copie.png" alt="">
+                        <i class="fas fa-arrow-left"></i>
                         </div>
                         <div class="box-slider">
                             <div class="slider-chapitre">
@@ -144,8 +143,7 @@
                             </div>
                         </div>
                         <div class="prev-next next">
-                            <img src="./assets/image/Curseur-Droite.png" alt="">
-                            <img src="./assets/image/Curseur-Droite1.png" alt="">
+                        <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                     

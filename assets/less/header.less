@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 .over-flay{
     position: fixed;
     top: 0px;
@@ -23,53 +26,56 @@
 header{
     max-width: 1280px;
     margin: auto;
-    .header-wrap-mobile{
-        display: none;
-    }
-    .header-wrap{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 0px;
-        .header-menu{
+    .container{
+        max-width: 1024px;
+        margin: 0px auto;
+        .header-wrap-mobile{
+            display: none;
+        }
+        .header-wrap{
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            .nav-bar{
-                .menu-list{
-                    display: flex;
-                    .menu-item{
-                        list-style-type: none;
-                        padding-right: 30px;
-                        .menu-link{
-                            text-decoration: none;
-                            color: black;
-                            font-weight: 700;
+            padding: 10px 0px;
+            .header-menu{
+                display: flex;
+                align-items: center;
+                .nav-bar{
+                    .menu-list{
+                        display: flex;
+                        .menu-item{
+                            list-style-type: none;
+                            padding-right: 30px;
+                            .menu-link{
+                                text-decoration: none;
+                                color: black;
+                                font-weight: 700;
+                            }
                         }
                     }
                 }
-            }
-            .header-box{
-                border: 1px solid #D0D3DB;
-                padding: 10px 0px;
-                font-weight: 700;
-                border-radius: 5px;
-                .title-box{
-                    padding: 0px 10px;
-                    cursor: pointer;
-                }
-                .title-box:nth-child(2){
-                    color: #D0D3DB;
-                }
-                .title-box:first-child{
-                    position: relative;
-                    &::after{
-                        content: "";
-                        width: 1px;
-                        height: 20px;
-                        background-color: grey;
-                        position: absolute;
-                        top: 0px;
-                        right: -3px;
+                .header-box{
+                    border: 1px solid #D0D3DB;
+                    padding: 10px 0px;
+                    font-weight: 700;
+                    border-radius: 5px;
+                    .title-box{
+                        padding: 0px 10px;
+                        cursor: pointer;
+                        color: #D0D3DB;
+                    }               
+                    .active{
+                        position: relative;
+                        color: black;
+                        &::after{
+                            content: "";
+                            width: 1px;
+                            height: 20px;
+                            background-color: grey;
+                            position: absolute;
+                            top: 0px;
+                            right: -3px;
+                        }
                     }
                 }
             }
@@ -77,9 +83,7 @@ header{
     }
     
 }
-.container{
-    padding: 0px 128px;
-}
+
 .nav-bar{
     .menu-list{
         display: flex;
@@ -164,6 +168,40 @@ header{
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    header{
+        .container{
+            .header-wrap-mobile{
+                .side-bar{
+                    &::after{
+                        border-left: 32px solid #13224C;
+                        border-top: 32px solid transparent;
+                        border-bottom: 32px solid transparent;
+                        right: -32px;
+                    }
+                    img{
+                        padding: 19px 0px 19px 15px;
+                    }
+                }
+                .header-title{
+                    font-size: 24px;
+                    padding-left: 20px;
+                    .title-inner{
+                        font-size: 24px;
+                    }
+                }
+                .share-mobile{
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 10px;
+                    img{
+                        max-width: 70%;
                     }
                 }
             }

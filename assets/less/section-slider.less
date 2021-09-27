@@ -1,4 +1,6 @@
 .section-slider{
+    max-width: 1024px;
+    margin: 0px auto;
     .container{
         .slider-wrap{
             padding-top: 60px;
@@ -13,15 +15,22 @@
                 .prev-next{
                     width: 5%;
                     position: relative;
-                    img{
+                    font-size: 25px;
+                    font-weight: 400;
+                    &:hover{
+                        background-color: #626AF2;
+                        i{
+                            color: white;
+                        }
+                    }
+                    i{
                         position: absolute;
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
+                        cursor: pointer;
                     }
-                    & img:nth-child(2){
-                        display: none;
-                    }
+                   
                 }
                 .box-slider{
                     display: flex;
@@ -30,55 +39,68 @@
                     margin: auto;
                     border-top: none;
                     border-bottom: none;
+                    .slick-dots{
+                        li{
+                            margin: 0px;
+                            button::before{
+                                font-size: 10px;
+                            }
+                        }
+                    }
                     .slick-prev, .slick-next{
                         display: none!important;
                     }
                     
-                    .slider-chapitre:nth-child(4), .slider-chapitre:nth-child(8), .slider-chapitre:nth-child(12){
-                        border-right: none;
-                    }
-                    .slider-chapitre{
+                    .slick-track{
                         display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        border-right: 1px solid grey;
-                        padding: 70px 0px;
-                        .chapitre-count{
-                            font-size: 18px;
-                            font-weight: bold;
-                            position: relative;
-                            margin-bottom: 20px;
-                            &::after{
-                                content: "";
-                                width: 50%;
-                                height: 2px;
-                                position: absolute;
-                                left: 50px;
-                                bottom: -1px;
-                                transform: translateX(-50%);
-                                background-color: black;
-                            }
+                        .slider-chapitre:nth-child(4), .slider-chapitre:nth-child(8), .slider-chapitre:nth-child(12){
+                            border-right: none;
                         }
-                        .chapitre-title{
-                            text-align: center;
-                            font-size: 34px;
-                            font-family: 'Times New Roman', Times, serif;
-                            font-weight: lighter;
-                            padding-bottom: 30px;
-                            flex: 1;
-                        }
-                        .chapitre-time{
-                            margin-top: auto;
-                            strong{
+                        .slider-chapitre{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            border-right: 1px solid grey;
+                            padding: 70px 0px;
+                            color: #13224C;
+                            height: auto;
+                            .chapitre-count{
+                                font-size: 18px;
+                                font-weight: bold;
                                 position: relative;
+                                margin-bottom: 20px;
                                 &::after{
                                     content: "";
-                                    width: 100%;
-                                    height: 1px;
-                                    background-color: black;
+                                    width: 50%;
+                                    height: 2px;
                                     position: absolute;
-                                    left: 0px;
-                                    bottom: 1px;
+                                    left: 50px;
+                                    bottom: -1px;
+                                    transform: translateX(-50%);
+                                    background-color: black;
+                                }
+                            }
+                            .chapitre-title{
+                                text-align: center;
+                                font-size: 34px;
+                                font-family: 'Times New Roman', Times, serif;
+                                font-weight: lighter;
+                                padding-bottom: 30px;
+                                color: black;
+                            }
+                            .chapitre-time{
+                                margin-top: auto;
+                                strong{
+                                    position: relative;
+                                    &::after{
+                                        content: "";
+                                        width: 100%;
+                                        height: 1px;
+                                        background-color: black;
+                                        position: absolute;
+                                        left: 0px;
+                                        bottom: 1px;
+                                    }
                                 }
                             }
                         }
@@ -130,6 +152,46 @@
                         }
                     }
                    
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .section-slider{
+        padding: 0px 20px;
+        .container{
+            .slider-wrap{
+                padding-top: 25px;
+                .slider-title{
+                    max-width: 220px;
+                    font-size: 26px;
+                }
+                .slider{
+                    border-radius: 10px;
+                    .prev-next{
+                        width: 13%;
+                    }
+                    .box-slider{
+                        width: 74%;
+                        .slick-track{
+                            .slider-chapitre{
+                                border-right: 0px;
+                                padding: 35px 0px;
+                                .chapitre-count{
+                                    font-size: 16px;
+                                    margin-bottom: 0px;
+                                }
+                                .chapitre-title{
+                                    font-size: 45px;
+                                    padding-bottom: 0px;
+                                }
+                                .chapitre-time{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

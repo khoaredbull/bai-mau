@@ -17,7 +17,7 @@
                                     INDICE 1
                                 </span>
                                 <h4 class="indice-title">
-                                   Le Crédit Etudiant de la Caisse d'Èpargne Le Crédit Etudiant de la Caisse d'Èpargne Le Crédit Etudiant de la Caisse d'Èpargne
+                                   Le Crédit Etudiant de la Caisse d'Èpargne Le Crédit Etudiant de la
                                 </h4>
                             </div>
                             <div class="indice-box">
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                         <div class="plus">
-                            <img src="./assets/image/Objet-dynamique-vectoriel1.png" alt="">
+                        <i class="fal fa-plus"></i>
                         </div>
                     </div>
                     <div class="indice-right">
@@ -72,28 +72,28 @@
                             <h4 class="indice-title">
                                 Obtenez le rapport d'activité :
                             </h4>
-                            <div class="votre-item">
+                            <a href="#" class="votre-item">
                                 <p class="votre-item-text">
                                     Télécharger
                                 </p>
                                 <p class="votre-item-text">
                                     le rapport d'activité
                                 </p>
-                                <p class="votre-item-text">
+                                <p class="votre-item-text text-thin">
                                     (PDF 16 Mo)
                                 </p>
-                            </div>
-                            <div class="votre-item">
+                            </a>
+                            <a href="#" class="votre-item">
                                 <p class="votre-item-text">
                                     Commander
                                 </p>
                                 <p class="votre-item-text">
                                     le rapport d'activité
                                 </p>
-                                <p class="votre-item-text">
+                                <p class="votre-item-text text-thin">
                                     (Format Parpier)
                                 </p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

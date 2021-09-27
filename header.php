@@ -43,7 +43,7 @@
                         </ul>
                     </nav>
                     <div class="header-box">
-                        <span class="title-box">fr</span>
+                        <span class="title-box active">fr</span>
                         <span class="title-box">en</span>
                     </div>
                 </div>

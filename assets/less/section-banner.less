@@ -3,6 +3,8 @@
     margin: auto;
     .section-banner{
         background-color: #E6E6E6;
+        max-width: 1024px;
+        margin: auto;
         .container{
             .banner-wrap{
                 width: 100%;
@@ -174,6 +176,30 @@
                     }
                     .share-icon{
                         display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .main-content{
+        .section-banner{
+            .container{
+                .banner-wrap{
+                    .logo{
+                        bottom: 70px;
+                        img{
+                            max-width: 100%;
+                        }
+                    }
+                    .banner-title{
+                        padding-left: 25px;
+                        padding-right: 25px;
+                        top: 25px;
+                        .heading{
+                            font-size: 40px;
+                        }
                     }
                 }
             }
